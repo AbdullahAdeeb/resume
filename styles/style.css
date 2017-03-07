@@ -20,6 +20,9 @@ page {
 hr {
   margin: 0 !important;
 }
+li {
+  text-align: justify;
+}
 .page-header {
   background-color: #2a2a2a;
   color: #fff;
@@ -247,6 +250,13 @@ hr {
 }
 .section.objective .content p {
   margin: 0;
+}
+.section.summary h1 {
+  top: 130px;
+}
+.section.summary .content {
+  min-height: 90px;
+  padding: 10px 20px 10px 0px;
 }
 .section.education h1 {
   top: 150px;
