@@ -71,11 +71,11 @@ hr {
   font-size: 3em;
   top: -10px;
   position: relative;
-  color: #0ff;
+  color: #b4f1c5;
 }
 @media print {
   .page-header .left .name {
-    color: #0ff !important;
+    color: #b4f1c5 !important;
     -webkit-print-color-adjust: exact !important;
   }
 }
