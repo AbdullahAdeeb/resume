@@ -1,0 +1,27 @@
+{
+    "name": "resume",
+    "version": "1.0.0",
+    "description": "My Resume",
+    "main": "index.html",
+    "dependencies": {},
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AbdullahAdeeb/resume.git"
+    },
+    "keywords": [
+        "resume",
+        "abdullah",
+        "adeeb",
+        "abdullahadeeb"
+    ],
+    "author": "Abdullah Adeeb",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/AbdullahAdeeb/resume/issues"
+    },
+    "homepage": "https://github.com/AbdullahAdeeb/resume#readme"
+}

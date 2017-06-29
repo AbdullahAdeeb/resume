@@ -8,6 +8,20 @@ page {
   font-family: "Times New Roman", Times, serif;
   display: block;
   width: 100%;
+  background-color: #f5f5f5;
+}
+@media print {
+  body,
+  page {
+    background-color: #f5f5f5 !important;
+    -webkit-print-color-adjust: exact !important;
+  }
+}
+page {
+  max-width: 8.5in;
+  margin: 0 auto;
+  box-shadow: 0 0 15px 1px #000;
+  background: #fff;
 }
 @media print {
   page {
@@ -110,7 +124,8 @@ hr {
   left: 10px;
 }
 .page-body {
-  border-left: 50px solid #000;
+  border-left: 1px solid #000;
+  margin-left: 49px;
 }
 .timeline {
   font-family: calibri;
@@ -221,14 +236,14 @@ hr {
   transform: rotate(-90deg);
   transform-origin: 0 0;
   position: absolute;
-  font-size: 1.75em;
+  font-size: 1.5em;
   margin: auto auto;
-  color: #fff;
-  left: -1.2em;
+  color: #2a2a2a;
+  left: -1.5em;
 }
 @media print {
   .section h1 {
-    color: #fff !important;
+    color: #2a2a2a !important;
     -webkit-print-color-adjust: exact !important;
   }
 }
