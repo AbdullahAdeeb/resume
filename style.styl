@@ -3,6 +3,13 @@
     // display: none;
 }
 ///////////////////////////
+
+@font-face{
+   font-family garamond
+   font-style normal
+   src url(fonts/garamond.ttf)
+}
+
 color(c){
     color: c;
     @media print{
@@ -30,7 +37,7 @@ background-color(c){
 
 body, page{
     margin: 0;
-    font-family: "Times New Roman",Times, serif;
+    font-family: garamond;
     display: block;
     width: 100%;
     background-color:whitesmoke;
@@ -63,9 +70,8 @@ hr{
     flex-wrap: wrap;
     justify-content:space-between;
     padding: 20px 50px;
-    font-family: calibri;
+    font-family: cambria;
     padding-bottom: 35px;
-    // font-family: Arial, Helvetica, sans-serif;
     .left{
         float: none;
         order: 1;
@@ -119,7 +125,7 @@ hr{
     margin-left:49px;
 }
 .timeline{
-    font-family: calibri;
+    font-family: cambria;
     @media screen and (max-width:630px) {
         display: none;
     }
@@ -129,7 +135,8 @@ hr{
     display: flex;
     justify-content: space-between;
     padding-left: 20px;
-    box-shadow: 0 2px 3px 0px black;
+    box-shadow: 0 0px 3px 0px #000;
+    border-bottom: 1px solid black;
     .period{
         display: inline-block;
         position: relative;
@@ -214,7 +221,7 @@ hr{
     }
 
     h2{
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
     p{
         font-size: 1.2em;
@@ -223,7 +230,7 @@ hr{
     ////////////////
     // objective
     ///////////////
-    &.objective{
+    &.summary{
         h1{
             top: 130px;
         }
@@ -323,14 +330,16 @@ hr{
             font-weight: 800;
         }
         object{
-            max-width: 800px;
+            max-width: 600px;
+            padding: 30px;
             margin: 0 auto;
             display: block;
 
         }
         @media print{
             object{
-                max-height: 514px;
+                max-height: 450px;
+                padding: 30px;
             }
         }
 
@@ -342,7 +351,7 @@ hr{
             }
         }
         .skill-map{
-            border:2px solid black;
+            border: 1px solid black;
             border-radius: 5px;
             padding: 5px;
             display: flex;
