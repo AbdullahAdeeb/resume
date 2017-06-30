@@ -35,6 +35,23 @@ background-color(c){
   margin: 0;
 }
 
+#printBtn{
+    width:60px;
+    height: 60px;
+    position: fixed;
+    bottom:40px;
+    right: 40px;
+    cursor: pointer;
+    z-index:999999;
+    @media print{
+        display: none;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
 body, page{
     margin: 0;
     font-family: garamond;
@@ -80,7 +97,7 @@ hr{
             font-size: 3em;
             top: -10px;
             position: relative;
-            color:#b4f1c5;
+            color:#8dd8bc;
             .last{
                 position: relative;
                 top: 20px;
@@ -338,7 +355,7 @@ hr{
         }
         @media print{
             object{
-                max-height: 450px;
+                max-height: 440px;
                 padding: 30px;
             }
         }
@@ -372,13 +389,16 @@ hr{
                 margin: 3px;
             }
             .key-dark{
-                keycolor(#7b93a4ff);
+                keycolor(#efefef);
+                border: 2px solid black;
+                width:16px;
+                height:16px;
             }
             .key-blue{
-                keycolor(#92cbc4ff);
+                keycolor(#8dd8bc);
             }
             .key-light{
-                keycolor(#b4f1c5ff);
+                keycolor(#45818e);
             }
 
         }
