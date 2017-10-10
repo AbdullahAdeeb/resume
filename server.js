@@ -10,3 +10,4 @@ var path = require('path');
 app.use("/", express.static(__dirname + '/'))
 
 app.listen(8080);
+console.log('serving on: localhost:8080');
