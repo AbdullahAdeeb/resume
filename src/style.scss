@@ -60,8 +60,7 @@ $dark-grey: #3d3d3d;
     }
 }
 
-body,
-page {
+body {
     margin: 0;
     display: block;
     width: 100%;
@@ -74,8 +73,9 @@ page {
     }
     max-width: 8.5in;
     margin: 0 auto;
+    display: block;
     box-shadow: 0 0 15px 1px black;
-    background: white;
+    @include background-color(white);
 }
 
 .clear {
