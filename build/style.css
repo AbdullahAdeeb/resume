@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css?family=Yrsa");
+@page {
+  size: Letter;
+  margin: 0; }
+
+* {
+  box-sizing: border-box;
+  font-family: 'Yrsa', serif; }
+
+#printBtn {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  cursor: pointer;
+  z-index: 999999; }
+  @media print {
+    #printBtn {
+      display: none; } }
+  #printBtn img {
+    width: 100%;
+    height: 100%; }
+
+body,
+page {
+  margin: 0;
+  display: block;
+  width: 100%;
+  background-color: whitesmoke; }
+  @media print {
+    body,
+    page {
+      background-color: whitesmoke !important;
+      -webkit-print-color-adjust: exact !important; } }
+
+page {
+  max-width: 8.5in;
+  margin: 0 auto;
+  box-shadow: 0 0 15px 1px black;
+  background: white; }
+  @media print {
+    page {
+      height: 11in !important; } }
+
+.clear {
+  clear: both; }
+
+hr {
+  margin: 0 !important; }
+
+.page-header {
+  background-color: #3d3d3d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px 20px 50px;
+  font-family: cambria;
+  padding-bottom: 35px; }
+  @media print {
+    .page-header {
+      background-color: #3d3d3d !important;
+      -webkit-print-color-adjust: exact !important; } }
+  .page-header .name {
+    font-size: 2.5em;
+    position: relative;
+    color: #81d4fa; }
+  .page-header .contact {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start; }
+  .page-header .left {
+    float: none;
+    order: 1;
+    flex-grow: 0; }
+  .page-header .right {
+    order: 3;
+    flex-grow: 0;
+    color: white;
+    text-align: right;
+    line-height: 20px; }
+
+.page2 {
+  margin-top: 20px; }
+  .page2 .page-header {
+    padding-top: 30px;
+    flex-direction: row;
+    height: 20px; }
+    .page2 .page-header .left .name {
+      color: white; }
+      .page2 .page-header .left .name .last {
+        position: relative;
+        top: 0px;
+        left: 10px; }
+
+.page-body {
+  padding: 0 20px; }
+
+.timeline {
+  font-family: cambria;
+  height: 24px;
+  position: relative;
+  background-color: #dadada;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 35px;
+  box-shadow: 0 0px 3px 0px #000;
+  border-bottom: 1px solid black;
+  margin: 0 -20px 25px -20px; }
+  @media screen and (max-width: 630px) {
+    .timeline {
+      display: none; } }
+  @media print {
+    .timeline {
+      background-color: #dadada !important;
+      -webkit-print-color-adjust: exact !important; } }
+  .timeline .period {
+    display: inline-block;
+    position: relative; }
+    .timeline .period .desc {
+      z-index: 9;
+      position: relative;
+      height: 23px;
+      padding: 2px 10px 2px 10px;
+      background-color: white;
+      color: #000;
+      border: 2px solid #000000;
+      border-width: 0 2px 0 2px;
+      text-align: center; }
+      @media print {
+        .timeline .period .desc {
+          background-color: white !important;
+          -webkit-print-color-adjust: exact !important; } }
+      .timeline .period .desc img {
+        height: 19px; }
+    .timeline .period .year1 {
+      position: absolute;
+      color: white;
+      top: -23px;
+      left: -17px;
+      font-style: italic; }
+    .timeline .period .year2 {
+      position: absolute;
+      color: black;
+      right: -25px;
+      top: 30px;
+      font-style: italic; }
+    .timeline .period#uni .desc {
+      border-radius: 20px 0 0 20px; }
+    .timeline .period#bb img {
+      height: 20px; }
+    .timeline .period#grad .desc {
+      border-radius: 0 20px 20px 0; }
+    .timeline .period#grad .year1 {
+      height: 18px;
+      display: block; }
+    .timeline .period#ibm2 {
+      width: 130px; }
+      .timeline .period#ibm2 .desc {
+        border-radius: 20px 0 0 20px;
+        border-right: none; }
+      .timeline .period#ibm2 .year2 {
+        left: 60px;
+        width: 66px; }
+
+.made-with {
+  margin-top: 20px;
+  font-size: small;
+  display: none; }
+  @media print {
+    .made-with {
+      display: block; } }
+
+.sections-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+  padding-bottom: 10px; }
+
+.section {
+  position: relative;
+  padding: 10px 10px 0px 10px; }
+  .section ul {
+    margin: 0; }
+  .section .content {
+    padding-top: 10px;
+    border-radius: 0 0 15px 15px; }
+  .section h1 {
+    font-size: 14pt;
+    width: 100%;
+    text-align: center;
+    border: solid 1px black;
+    color: #2a2a2a;
+    background-color: #3d3d3d;
+    color: white;
+    border-radius: 20px 20px 0 0;
+    margin: 0; }
+    @media print {
+      .section h1 {
+        background-color: #3d3d3d !important;
+        -webkit-print-color-adjust: exact !important; } }
+  .section h2 {
+    font-size: 12pt;
+    margin: 0;
+    font-weight: 400; }
+  .section p {
+    margin: 0;
+    font-size: 11pt; }
+  .section.summary .content p {
+    margin: 0; }
+  .section.education .content .row1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px; }
+    .section.education .content .row1.uoft {
+      margin-top: -5px; }
+    .section.education .content .row1.aws {
+      margin-top: 10px; }
+      .section.education .content .row1.aws .left {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center; }
+        .section.education .content .row1.aws .left h2 {
+          padding-top: 4px; }
+    .section.education .content .row1 .left .icon {
+      width: 15px;
+      margin-right: 7px;
+      font-size: 14px;
+      padding-right: 0px;
+      padding-top: 3px; }
+    .section.education .content .row1 .right {
+      float: right;
+      position: relative;
+      display: block;
+      margin-right: 130px; }
+      .section.education .content .row1 .right img {
+        width: 130px; }
+      .section.education .content .row1 .right img.UofT-logo {
+        margin-top: -10px; }
+      .section.education .content .row1 .right img.aws {
+        width: 160px;
+        margin-right: -30px;
+        margin-top: 5px; }
+  .section.education .content .row2 {
+    padding-left: 40px; }
+    .section.education .content .row2 ul {
+      padding-left: 0;
+      margin-top: 3px;
+      list-style-type: none; }
+      .section.education .content .row2 ul li {
+        float: left;
+        width: 100%;
+        font-size: 9pt; }
+        .section.education .content .row2 ul li .righted {
+          text-align: left;
+          width: 65%;
+          float: right; }
+  .section.skills {
+    width: 4.5in; }
+    .section.skills h1 {
+      margin: 0px; }
+    .section.skills .content .title {
+      font-weight: 800; }
+    .section.skills .content object {
+      max-width: 450px;
+      padding-top: 20px;
+      display: block; }
+    .section.skills .content .skill-map {
+      border: 1px solid lightgray;
+      border-radius: 0 0 5px 5px;
+      margin-top: -10px;
+      padding: 5px;
+      text-align: center; }
+      .section.skills .content .skill-map .map-desc {
+        display: inline-block;
+        margin: 0;
+        padding-left: 5px;
+        font-size: 15px; }
+      .section.skills .content .skill-map .map-key {
+        top: 5px;
+        position: relative;
+        display: inline-block;
+        border-radius: 10px;
+        width: 20px;
+        height: 20px;
+        margin: 3px; }
+      .section.skills .content .skill-map .key-dark {
+        background-color: #efefef;
+        border: 2px solid black;
+        width: 16px;
+        height: 16px; }
+        @media print {
+          .section.skills .content .skill-map .key-dark {
+            background-color: #efefef !important;
+            -webkit-print-color-adjust: exact !important; } }
+      .section.skills .content .skill-map .key-blue {
+        background-color: #81d4fa; }
+        @media print {
+          .section.skills .content .skill-map .key-blue {
+            background-color: #81d4fa !important;
+            -webkit-print-color-adjust: exact !important; } }
+      .section.skills .content .skill-map .key-light {
+        background-color: #03a9f4; }
+        @media print {
+          .section.skills .content .skill-map .key-light {
+            background-color: #03a9f4 !important;
+            -webkit-print-color-adjust: exact !important; } }
+  .section.projects {
+    max-width: 3.3in;
+    width: 100%; }
+    .section.projects .content {
+      padding-top: 0; }
+      .section.projects .content div.project {
+        border: 1px solid lightgray;
+        padding: 5px 10px; }
+        .section.projects .content div.project:last-child {
+          border-radius: 0 0 15px 15px; }
+        .section.projects .content div.project h3 {
+          padding: 0;
+          margin: 0;
+          font-weight: 400;
+          font-size: 12pt; }
+        .section.projects .content div.project span.smaller {
+          color: gray;
+          font-size: 10pt; }
+        .section.projects .content div.project p {
+          font-size: 11pt;
+          color: gray;
+          font-weight: 600; }
+        .section.projects .content div.project li {
+          font-size: 11pt;
+          list-style: square; }
+  .section.employment h1 {
+    top: 75vh; }
+    @media print {
+      .section.employment h1 {
+        top: 55vh; } }
+  .section.employment .job-wrapper:not(:first-of-type) {
+    padding-top: 20px; }
+  .section.employment .job-wrapper .job-title {
+    height: 55px;
+    display: block;
+    padding: 0 20px;
+    font-weight: 700;
+    font-size: 1.1rem; }
+    .section.employment .job-wrapper .job-title .left {
+      float: left; }
+    .section.employment .job-wrapper .job-title .right {
+      float: right;
+      padding-top: 2px;
+      line-height: 25px;
+      text-align: right; }
+    .section.employment .job-wrapper .job-title .logo {
+      height: 24px;
+      padding-bottom: 4px; }
+    .section.employment .job-wrapper .job-title .dates {
+      font-style: italic;
+      font-weight: 400; }
+  .section.employment .job-wrapper .job-details {
+    padding-right: 20px; }
+    .section.employment .job-wrapper .job-details ul {
+      margin: 5px 0; }
