@@ -41,9 +41,9 @@ server.listen(port);
 
 // Web server - serves the Client-side
 
-app.use('/', express.static(__dirname + '/build'));
+app.use('/', express.static(__dirname + '/docs'));
 
 var livereload = require('livereload');
 var lrserver = livereload.createServer();
-lrserver.watch(__dirname + "/build");
+lrserver.watch(__dirname + "/docs");
 console.log('serving at localhost:3000');

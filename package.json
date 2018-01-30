@@ -22,10 +22,10 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "serve": "node serve.js",
-        "build": "copy-and-watch src/**/*.{html,json} src/**/fonts/* build",
-        "watch-build": "cpx \"src/assets/**/*\" build/assets -C & cpx \"src/*.{html,js}\" build --watch -C",
-        "css": "node-sass src/style.scss -o build",
-        "watch-scss": "npm run css && node-sass src/style.scss -wo build",
+        "build": "copy-and-watch src/**/*.{html,json} src/**/fonts/* docs",
+        "watch-build": "cpx \"src/assets/**/*\" docs/assets -C & cpx \"src/*.{html,js}\" docs --watch -C",
+        "css": "node-sass src/style.scss -o docs",
+        "watch-scss": "npm run css && node-sass src/style.scss -wo docs",
         "watch": "concurrently --kill-others \"npm run watch-scss\" \"npm run watch-build\" \"node serve.js/\""
     },
     "repository": {
