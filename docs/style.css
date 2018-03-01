@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Yrsa");
 @page {
   size: Letter;
   margin: 0; }
 
 * {
   box-sizing: border-box;
-  font-family: 'Yrsa', serif; }
+  font-weight: 300 !important; }
 
 #printBtn {
   width: 60px;
@@ -53,6 +52,7 @@ hr {
   margin: 0 !important; }
 
 .page-header {
+  font-family: 'Roboto';
   background-color: #3d3d3d;
   color: white;
   display: flex;
@@ -60,7 +60,6 @@ hr {
   align-items: center;
   justify-content: space-between;
   padding: 10px 50px 20px 50px;
-  font-family: cambria;
   padding-bottom: 35px; }
   @media print {
     .page-header {
@@ -103,7 +102,6 @@ hr {
   padding: 0 20px; }
 
 .timeline {
-  font-family: cambria;
   height: 24px;
   position: relative;
   background-color: #dadada;
@@ -330,7 +328,7 @@ hr {
         .section.projects .content div.project h3 {
           padding: 0;
           margin: 0;
-          font-weight: 400;
+          font-weight: 600 !important;
           font-size: 12pt; }
         .section.projects .content div.project span.smaller {
           color: gray;
