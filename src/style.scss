@@ -220,7 +220,7 @@ hr {
                 display: block;
             }
         }
-        &#ibm2 {
+        &:last-of-type{
             width: 130px;
             .desc {
                 border-radius: 20px 0 0 20px;
@@ -248,7 +248,7 @@ hr {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 20px;
+    margin-top: 0px;
     padding-bottom: 10px;
 }
 
@@ -308,12 +308,14 @@ hr {
                 justify-content: space-between;
                 align-items: center;
                 padding-left: 20px;
-                // &.carleton {}
+             
+                
                 &.uoft {
                     margin-top: -5px;
+                    
                 }
                 &.aws {
-                    margin-top: 10px;
+                    margin-top: 3px;
                     .left {
                         display: flex;
                         flex-flow: row nowrap;
@@ -338,12 +340,14 @@ hr {
                     position: relative;
                     display: block;
                     margin-right: 130px;
+                    max-height: 40px;
                     img {
                         width: 130px;
                     }
                     img.carleton {
                         // max-width: 105px;
                         // padding-left: 40px;
+                        height: 30px;
                     }
                     img.UofT-logo {
                         // padding-left: 0px;
@@ -353,8 +357,7 @@ hr {
                         margin-top: -10px;
                     }
                     img.aws {
-                        width: 160px;
-                        margin-right: -30px;
+                     
                         margin-top: 5px;
                     }
                 }
@@ -521,7 +524,7 @@ hr {
                     text-align: right;
                 }
                 .logo {
-                    height: 24px;
+                    height: 30px;
                     padding-bottom: 4px;
                 }
                 .dates {
